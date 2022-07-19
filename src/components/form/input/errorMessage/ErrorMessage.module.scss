@@ -1,0 +1,18 @@
+@import '../../../../scss/variables';
+
+.error {
+    color: $error;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -18px;
+    left: 14px;
+}
+.margin{
+    color: $error;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -18px;
+    left: 160px;
+}
