@@ -46,8 +46,11 @@ const Form = ({ setNewUserRegistrated }) => {
                 { method: 'POST', body: formData, headers: { 'Token': token, }, })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
-                    data.success ? setSuccess(true) : console.log('something went wrong', data)
+                    if (!data.success) {
+                        alert(data.message)
+                    } else {
+                        setSuccess(true)
+                    }
                 })
                 .catch(e => console.error(e))
         }
