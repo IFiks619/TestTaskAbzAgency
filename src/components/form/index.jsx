@@ -52,7 +52,6 @@ const Form = ({ setNewUserRegistrated }) => {
                         setSuccess(true)
                     }
                 })
-                .catch(e => console.error(e))
         }
     }
 
